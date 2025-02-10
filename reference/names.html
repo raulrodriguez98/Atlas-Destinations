@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name List</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		#container {
+			display: flex;
+			flex-direction: row;
+		}
+
+		#left-panel {
+			background-color: #f2f2f2;
+			overflow: auto;
+			width: 20%;
+			max-height: 80vh;
+		}
+
+		#right-panel {
+			background-color: #fff;
+			flex-grow: 1;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.name-item {
+			padding: 10px;
+			cursor: pointer;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.name-item:hover {
+			background-color: #ddd;
+		}
+
+		.selected-name {
+			font-size: 3em;
+			font-weight: bold;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Select a Name</h1>
+	<div id="container">
+		<div id="left-panel"></div>
+		<div id="right-panel"></div>
+	</div>
+	<script>
+		// Array of names to display
+		const names = ['Emma', 'Liam', 'Olivia', 'Noah', 'Ava', 'Ethan', 'Sophia', 'Logan', 'Isabella', 'Mason', 'Mia', 'Jacob', 'Charlotte', 'William', 'Amelia', 'Benjamin', 'Abigail', 'Michael', 'Emily', 'Elijah', 'Harper', 'Evelyn', 'Daniel', 'Elizabeth', 'Matthew', 'Avery', 'Joseph', 'Sofia', 'Jackson', 'Ella', 'Samuel', 'Scarlett', 'Sebastian', 'Victoria', 'David', 'Aria', 'Carter', 'Grace', 'Wyatt', 'Chloe', 'Jayden', 'Camila', 'John', 'Madison', 'Owen', 'Penelope', 'Dylan', 'Luna', 'Luke', 'Sofia', 'Gabriel', 'Layla', 'Anthony', 'Riley', 'Isaac', 'Nora', 'Grayson', 'Zoey', 'Christopher', 'Eleanor', 'Joshua', 'Hannah', 'Nicholas', 'Leah', 'Christian', 'Aubrey', 'Andrew', 'Ellie', 'Lincoln', 'Stella', 'Mateo', 'Paisley', 'Ryan', 'Audrey', 'Jaxon', 'Skylar', 'Levi', 'Violet', 'Nathan', 'Claire', 'Aaron', 'Bella', 'Isaiah', 'Aurora', 'Thomas', 'Lucy', 'Charles', 'Anna', 'Josiah', 'Savannah', 'Hudson', 'Maya', 'Christian', 'Elena', 'Hunter', 'Genesis', 'Connor', 'Naomi', 'Eli', 'Caroline', 'Ezra', 'Isabelle'];
+
+		// Get reference to left panel
+		const leftPanel = document.getElementById('left-panel');
+
+		// Add each name to left panel as a clickable item
+		names.forEach(name => {
+			const nameItem = document.createElement('div');
+			nameItem.classList.add('name-item');
+			nameItem.textContent = name;
+			nameItem.addEventListener('click', () => {
+				showSelectedName(name);
+			});
+			leftPanel.appendChild(nameItem);
+		});
+
+		// Function to show the selected name on the right panel
+		function showSelectedName(name) {
+			const rightPanel = document.getElementById('right-panel');
+			rightPanel.innerHTML = `<div class="selected-name">${name}</div>`;
+		}
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atlas Destinations</title>
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-nav-links">
+        <div class="logo">
+          <a href="#">Atlas Destinations</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="./index.html">Top 10 Recommendations</a></li>
+          <li><a href="./search.html">Search</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input  id="search-bar" type="text" placeholder="Search...">
+        <button id="btn-busqueda" type="submit">Search</button>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="content">
+    <div id="busqueda">
+      <button id="search-btn" class="search-button"><i class="fas fa-search"></i></button>
+      <input id="input-busqueda" type="text"></input>
+    </div>
+    <div id="notification-container"></div>
+  <div id="container">
+    <div id="resultados"></div>
+    <div id="detalles">
+      <h2 id="nombre-detalle"></h2>
+      <img id="img-detalle"></img>
+      <p id="desc-detalle"></p>
+    </div>
+  </div>
+    <!-- Content goes here -->
+  </section>
+  
+  <footer>
+    <!-- Footer content goes here -->
+    <p>&copy; 2023 Atlas Destinations. All rights reserved.</p>
+  </footer>
+  <script src="search.js"></script>
+</body>
+</html>

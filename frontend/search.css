@@ -1,0 +1,174 @@
+
+/* Reset some default styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #0f4e67;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: 20px;
+}
+
+.nav-links li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #42a5f5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Content styles */
+.content {
+  min-height: calc(100vh - 60px); /* Subtract header height from viewport height */
+  max-width: 1500px;
+  margin: 15px auto;
+  padding: 0 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ccc;
+  color: #000;
+  padding: 2px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed; /* Set position to fixed */
+  bottom: 0; /* Place footer at the bottom of the viewport */
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#exito {
+  padding: .5rem;
+  background-color: lightblue;
+  border-radius: 1rem;
+  text-align: center;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  font-size: 1.2rem;
+}
+
+#fracaso {
+  padding: .5rem;
+  background-color: indianred;
+  border-radius: 1rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+.resultado {
+  border: 1px solid lightblue;
+  padding: .5rem;
+}
+
+#resultados {
+  max-height: 80vh;
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.resultado:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+#img-detalle {
+  width: 50%;
+  height: 50%;
+}
+
+#detalles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.seleccionado {
+  background-color: lightgray;
+  border: 3px solid gray;
+}
+
+#noti-paragraph {
+  margin: .2rem;
+}
+
+#input-busqueda {
+  width: 90%;
+  height: 75%;
+}
+
+#search-btn {
+  width: 5%;
+  height: 75%;
+  background-color: #fff;
+}
+
+#search-btn:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+#busqueda {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
