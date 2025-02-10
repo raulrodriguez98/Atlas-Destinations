@@ -3,6 +3,8 @@
 Página web que junto a web-scrapping, llamadas a APIs y una BD, recopila información sobre monumentos, lugares o sitios de interés según el destino que se indique, además de otros datos como el país al que pertenece, imágenes, descripción, coordenadas, categorías, temperatura, etc.
 
 
+En el index también hay una recomendación de monumentos que hay almacenados en la BD.
+
 
 MongoDB, backend con node+express, 
 frontend con html+css+js (servido por nginx),
